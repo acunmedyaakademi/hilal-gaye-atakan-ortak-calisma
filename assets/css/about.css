@@ -1,27 +1,33 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
 
 * {
   margin: 0;
 }
 
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Inter";
-  color: #272D37;
+  color: #272d37;
 }
 
-
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 ul {
@@ -31,17 +37,106 @@ a {
   text-decoration: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
+}
 
-  
-  /* footer */
+/* Features */
 
-}.footer {
+.features {
+  padding: 32px 16px;
+}
+
+.features-mobile-desktop {
+  display: block;
+}
+
+.features-tablet {
+  display: none;
+}
+
+.features-content {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.features-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #272d37;
+  margin-bottom: 12px;
+}
+
+.product-img {
+  margin-bottom: 32px;
+}
+
+.product-card:nth-child(1) {
+  padding-inline: 16px;
+}
+
+.product-card:nth-child(2) {
+  background-color: #fafbfc;
+  padding-inline: 16px;
+}
+
+.product-text {
+  margin-bottom: 32px;
+}
+
+.product-text h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #272d37;
+  margin-bottom: 24px;
+}
+
+.check-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.check {
+  display: flex;
+  gap: 8px;
+}
+
+.features-button {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  background-color: #437ef7;
+  padding: 12px 18px;
+  border-radius: 6px;
+}
+
+.features-button a {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #fff;
+}
+
+/* footer */
+
+.footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
-  padding: 32px 16px ;
+  padding: 32px 16px;
 }
 
 .footer-logo {
@@ -57,7 +152,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .footer p {
-  color: #5F6D7E;
+  color: #5f6d7e;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -69,7 +164,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .footer ul li {
   list-style: none;
-  color: #5F6D7E;
+  color: #5f6d7e;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -78,8 +173,8 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 12px;
 }
 
-.footer ul li:first-child{
-  color: #272D37;
+.footer ul li:first-child {
+  color: #272d37;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
