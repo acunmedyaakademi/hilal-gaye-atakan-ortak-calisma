@@ -36,10 +36,24 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* hilal start */
+
 features h3{
 font-size: 24px;
 font-weight: 700;
 line-height: 32px;
 letter-spacing: -0.02em;
 text-align: center;
+}
+
+
+.card-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:40px;
+}
+
+.card{
+  padding: 20px;
+  text-align: center;
 }
