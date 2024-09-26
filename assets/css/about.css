@@ -33,4 +33,63 @@ a {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+
+  
+  /* footer */
+
+}.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 32px 16px ;
+}
+
+.footer-logo {
+  grid-column: span 2;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer img {
+  margin-bottom: 16px;
+}
+
+.footer p {
+  color: #5F6D7E;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 24px;
+}
+.footer ul {
+  padding: 0px;
+}
+.footer ul li {
+  list-style: none;
+  color: #5F6D7E;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 12px;
+}
+
+.footer ul li:first-child{
+  color: #272D37;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 16px;
+}
+.footer-copyright img {
+  margin-inline: auto;
+}
+.footer-copyright {
+  grid-column: span 2;
+  margin-inline: auto;
 }
