@@ -24,9 +24,11 @@ img, picture, video, canvas, svg {
 input, button, textarea, select {
   font: inherit;
 }
+
 ul {
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -34,19 +36,23 @@ a {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }  
+
 header {
   background: url(../img/header-desktop.png) no-repeat;
   padding: 16px;
 }
+
 .header-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
 }
+
 .header-register, .nav {
   display: none;
 }
+
 .hero-info {
   text-align: center;
 }
@@ -59,6 +65,7 @@ header h1 {
   color: #F9F9F9;
   margin-bottom: 16px;
 }
+
 header h6 {
   font-size: 18px;
   font-weight: 400;
@@ -70,21 +77,28 @@ header h6 {
 
 /* Header End */
 
-/* Blog Star */
-.main-image-tablet, .main-image-desktop {
-  display: none;
+/* tags start */
+.tags {
+  padding: 16px;
 }
+.tags-list p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+}
+.tags-list span {
+  background-color: #F7F7F8;
+  padding: 4px 12px;
+  margin-right: 11px;
+}
+.tags-input-group 
+
+/* Blog Star */
 .blog {
   padding: 32px 16px;
 }
-.blog h3 {
-  text-align: center;
-  margin-bottom: 12px;
-}
-.blog p {
-  text-align: center;
-  margin-bottom: 24px;
-}
+
 .blog-card  {
   position: relative;
   border-radius: 10px;
@@ -92,19 +106,25 @@ header h6 {
   margin-bottom: 16px;
   width: 343px;
 }
+
 .blog-card > img {
+  height: 184px;
+  width: 343px;
   border-radius: 10px 10px 0px 0px;
   margin-inline: auto;
 }
+
 .user > img {
   position: absolute;
   top: 160px;
   right: 32px;
 }
+
 .card-content{
   margin-block: 24px;
   padding-inline: 32px;
 }
+
 .card-content button {
   background-color: #F5FAFF;
   color: #437EF7;
@@ -116,6 +136,7 @@ header h6 {
   letter-spacing: -0.10000000149011612px;
   margin-bottom: 24px;
 }
+
 .card-content span {
   font-size: 14px;
   font-weight: 500;
@@ -123,12 +144,129 @@ header h6 {
   letter-spacing: -0.10000000149011612px;
   color: #5F6D7E;
 }
+
 .card-content h4 ,.card-content p {
   text-align: left;
 }
+
 .card-content a {
   text-decoration: none;
   color: #437EF7;
   background: url(../img/right-icon-blue.svg) no-repeat right;
   padding-right: 25px;
 }
+
+.blog > .btn {
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.blog > div > button {
+  background-color: #437EF7;
+  color: #F9F9F9;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 0px #1018280A;
+}
+
+/* Blog end  */
+
+/* Footer start */
+
+footer {
+  padding: 32px 16px;
+  background-color: #151B28;
+}
+.footer-hero h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #F9F9F9;
+  margin-bottom: 16px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.input-group button:first-child {
+  padding: 12px 18px 12px 18px;
+  border-radius: 6px;
+  background-color: #437EF7;
+  color: #F9F9F9;
+  box-shadow: 0px 1px 2px 0px #1018280A;
+  border: none;
+}
+.input-group button:last-child {
+  padding: 12px 18px 12px 18px;
+  border-radius: 6px;
+  background-color: #2C3444;
+  color: #F9F9F9;
+  box-shadow: 0px 1px 2px 0px #1018280A;
+  border: none;
+}
+.footer-title {
+  border-bottom: 1px solid #2E3545;
+  border-top: 1px solid #2E3545;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 32px 16px ;
+  margin-top: 24px;
+}
+
+.footer-logo {
+  grid-column: span 2; 
+}
+.footer-title img {
+  margin-bottom: 16px;
+}
+
+.footer-title p {
+  color: #A5ACBA;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 24px;
+}
+.footer-title ul {
+  padding: 0px;
+}
+.footer-title ul li {
+  list-style: none;
+  color: #A5ACBA;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 12px;
+}
+
+.footer-title ul li:first-child {
+  color: #F9F9F9;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 16px;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  color: #A5ACBA;
+}
+
+.footer-copyright .social-icons {
+  display: flex;
+  gap: 12px;
+
+}
+/* Mobile End */
+
+/* Tablet Start */
