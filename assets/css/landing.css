@@ -224,7 +224,7 @@ margin-bottom: 16px;
   border-radius: 10px;
   border: 1px solid #F5FAFF;
   margin-bottom: 16px;
-  /* min-width: 343px; */
+  min-width: 343px;
 }
 .blog-card > img {
   border-radius: 10px 10px 0px 0px;
@@ -506,9 +506,9 @@ span:last-child {
       gap: 32px;
       width: 100%;
    }
-   /* .blog-card {
+   .blog-card {
       min-width: 336px; 
-   } */
+   }
    .user > img {
       top: 224px;
    }
@@ -736,7 +736,7 @@ span:last-child {
     grid-template-columns: repeat(3, 1fr);
   }
   .blog-card {
-    max-width: 384px;
+    min-width: 384px;
   }
   .article > p {
     padding-inline: 200px;
@@ -778,6 +778,6 @@ span:last-child {
   .footer-copyright > div  {
     display: block;
     margin-top: 16px;
-    text-align: center;  }
-
+    text-align: center;  
+  }
  }
