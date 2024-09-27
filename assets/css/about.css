@@ -1,5 +1,43 @@
-<<<<<<< HEAD
- 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter";
+  color: #272d37;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -68,39 +106,6 @@ header {
   color: #FFF;
   margin-bottom: 16px;
   margin-top: 8px;
-=======
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Inter";
-  color: #272d37;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
->>>>>>> gaye
 }
 .support form {
   display: flex;
@@ -134,7 +139,6 @@ form .btn-white {
   gap: 32px;
   margin-top: 64px;
 }
-<<<<<<< HEAD
   
 /* footer */
 
@@ -143,17 +147,8 @@ form .btn-white {
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   padding: 32px 16px ;
-=======
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
 }
+
 
 /* Features */
 
@@ -422,7 +417,6 @@ summary > span {
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
   padding: 32px 16px;
->>>>>>> gaye
 }
 
 .footer-logo {
@@ -473,7 +467,6 @@ summary > span {
 .footer-copyright img {
   margin-inline: auto;
 }
-<<<<<<< HEAD
 .footer-copyright > div > p {
   font-size: 16px;
   font-weight: 400;
@@ -639,9 +632,7 @@ summary > span {
   /* Footer End */
 
 }
-=======
 .footer-copyright {
   grid-column: span 2;
   margin-inline: auto;
 }
->>>>>>> gaye
