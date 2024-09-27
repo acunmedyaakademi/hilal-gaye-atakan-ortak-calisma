@@ -1,27 +1,33 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
 
 * {
   margin: 0;
 }
 
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Inter";
-  color: #272D37;
+  color: #272d37;
 }
 
-
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 ul {
@@ -31,6 +37,155 @@ a {
   text-decoration: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
-}  
+}
+
+/* Features-Pricing Start */
+
+.first-card,
+.second-card {
+  padding: 32px 16px;
+}
+
+.brand-group-text {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.brand-group-text h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.brand-group-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 32px;
+}
+
+.brand-group-text span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #437ef7;
+}
+
+.brand-group-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #437ef7;
+  box-shadow: 0px 1px 2px 0px #1018280a;
+  border-radius: 6px;
+  padding: 12px 18px;
+  gap: 6px;
+}
+
+.brand-group-button a {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #fff;
+}
+
+.brand-group-img-deskmob {
+  display: block;
+}
+
+.brand-group-img-tablet {
+  display: none;
+}
+
+/* Tablet Start */
+
+@media (width > 375px) {
+  /* Features-Pricing Start */
+
+  .first-card,
+  .second-card {
+    padding: 40px 32px;
+  }
+
+  .brand-group-text h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .brand-group-text p {
+    margin-bottom: 40px;
+  }
+
+  .brand-group-img-deskmob {
+    display: none;
+  }
+
+  .brand-group-img-tablet {
+    display: block;
+  }
+}
+
+/* Desktop Start */
+
+@media (width > 768px) {
+  /* Features-Pricing Start */
+
+  .first-card,
+  .second-card {
+    padding: 64px 80px;
+  }
+
+  .second-card {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 80px;
+  }
+
+  .first-card {
+    display: flex;
+    gap: 140px;
+  }
+
+  .first-text {
+    max-width: 516px;
+  }
+
+  .second-text {
+    max-width: 576px;
+  }
+
+  .brand-group-text {
+    align-self: center;
+    padding-left: 32px;
+  }
+
+  .brand-group-text h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .brand-group-text p {
+    margin-bottom: 40px;
+  }
+
+  .brand-group-img-deskmob {
+    display: block;
+    padding-right: 32px;
+  }
+
+  .brand-group-img-tablet {
+    display: none;
+  }
+}
