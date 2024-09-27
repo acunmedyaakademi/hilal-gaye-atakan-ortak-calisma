@@ -201,3 +201,9 @@ h6 {
   letter-spacing: -0.10000000149011612px;
   color: #5F6D7E;
 }
+
+.core-team-cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
