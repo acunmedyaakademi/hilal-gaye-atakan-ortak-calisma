@@ -367,3 +367,21 @@ footer {
     gap: 152px;
   }
 }
+
+
+.user{
+  display: flex;
+}
+
+.user-photo{
+  display: flex;
+}
+
+span{
+  display: block;
+}
+
+.comments{
+  background: #F8F9FB;
+
+}
