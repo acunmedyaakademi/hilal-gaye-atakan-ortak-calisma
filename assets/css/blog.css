@@ -92,9 +92,23 @@ header h6 {
   padding: 4px 12px;
   margin-right: 11px;
 }
-.tags-input-group 
+.tags-input-group {
+  margin-top: 12px;
+}
+.tags-input-group input {
+  border: 1px solid #DAE0E6; 
+  padding: 12px;
+  border-radius: 5px 0px 0px 5px;
+}
+.tags-input-group button {
+  background-color: #437EF7;
+  color: #F9F9F9;
+  border: none;
+  padding: 12px;
+  border-radius: 0 5px 5px 0;
+}
 
-/* Blog Star */
+/* Blog Start */
 .blog {
   padding: 32px 16px;
 }
@@ -270,3 +284,10 @@ footer {
 /* Mobile End */
 
 /* Tablet Start */
+
+@media (width > 375px) {
+  .hero-info {
+    width: 672px;
+    margin-inline: auto;
+  }
+}
