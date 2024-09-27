@@ -150,60 +150,135 @@ h6 {
 
 
 }
+
 /* Desktop */
 @media (min-width: 1280px) {
   .card-content>h3 {
     margin-top: 64px;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
   }
 
-  .card:nth-child(3), 
+  .card:nth-child(3),
   .card:nth-child(5),
-  .card:nth-child(6){
+  .card:nth-child(6) {
     display: none;
   }
-  .card-list{
+
+  .card-list {
     grid-auto-flow: row;
-   grid-template-columns: repeat(3,1fr);
-   grid-template-rows: auto;
-   padding-inline: 80px;
-   margin-block: 64px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding-inline: 80px;
+    margin-block: 64px;
   }
 
-  .card:nth-child(2){
+  .card:nth-child(2) {
     order: 1;
   }
 
-  .card-content > p{
+  .card-content>p {
     display: inherit;
   }
-  
-  
+
+
 }
 
 
-.core-team-content{
+.core-team-content {
   text-align: center;
 }
 
-.core-team-content > h3{
-  font-size: 32px;
+.core-team-content>h3 {
+  font-size: 24px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 32px;
   letter-spacing: -0.02em;
   margin-bottom: 16px;
+  margin-top: 40px;
 }
 
-.core-team-content > p{
+
+.core-team-content>p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.10000000149011612px;
   color: #5F6D7E;
+  margin-bottom: 32px;
 }
 
-.core-team-cards{
+.core-team-cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
+}
+
+.core-team-card-logos {
+  display: flex;
+  gap: 16px;
+}
+
+.core-team {
+  padding-inline: 32px;
+}
+
+.core-team-card h4{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+
+.core-team-card img{
+  margin-bottom: 16px;
+}
+
+.core-team-card p{
+  margin-bottom: 12px;
+  color: #5F6D7E;
+
+}
+
+/* tablet */
+@media (min-width: 576px) {
+  
+  .core-team-content>h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .core-team-content>p{
+    margin-bottom: 40px;
+  }
+
+  .core-team-cards{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 40px;
+  }
+
+  .core-team-card h4{
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  }
+}
+  
+/* Desktop */
+@media (min-width: 1280px) {
+  .card-content>h3 {
+  font-size: 32px;
+  line-height: 40px;
+  }
+
+  .core-team-cards{
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 64px;
+    margin-inline: 80px;
+  }
+
+  .core-team-content{
+    margin-inline: 80px;
+    margin-block: 64px;
+  }
+
 }
