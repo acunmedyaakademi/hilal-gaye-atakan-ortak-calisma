@@ -34,3 +34,101 @@ a {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }  
+header {
+  background: url(../img/header-desktop.png) no-repeat;
+  padding: 16px;
+}
+.header-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.header-register, .nav {
+  display: none;
+}
+.hero-info {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #F9F9F9;
+  margin-bottom: 16px;
+}
+header h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.10000000149011612px;
+  color: #F9F9F9;
+  margin-bottom: 32px;
+}
+
+/* Header End */
+
+/* Blog Star */
+.main-image-tablet, .main-image-desktop {
+  display: none;
+}
+.blog {
+  padding: 32px 16px;
+}
+.blog h3 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.blog p {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.blog-card  {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #F5FAFF;
+  margin-bottom: 16px;
+  width: 343px;
+}
+.blog-card > img {
+  border-radius: 10px 10px 0px 0px;
+  margin-inline: auto;
+}
+.user > img {
+  position: absolute;
+  top: 160px;
+  right: 32px;
+}
+.card-content{
+  margin-block: 24px;
+  padding-inline: 32px;
+}
+.card-content button {
+  background-color: #F5FAFF;
+  color: #437EF7;
+  border: none;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 24px;
+}
+.card-content span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+}
+.card-content h4 ,.card-content p {
+  text-align: left;
+}
+.card-content a {
+  text-decoration: none;
+  color: #437EF7;
+  background: url(../img/right-icon-blue.svg) no-repeat right;
+  padding-right: 25px;
+}

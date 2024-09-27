@@ -224,7 +224,7 @@ margin-bottom: 16px;
   border-radius: 10px;
   border: 1px solid #F5FAFF;
   margin-bottom: 16px;
-  min-width: 343px;
+  width: 343px;
 }
 .blog-card > img {
   border-radius: 10px 10px 0px 0px;
