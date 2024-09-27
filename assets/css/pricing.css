@@ -383,5 +383,20 @@ span{
 
 .comments{
   background: #F8F9FB;
+}
 
+.comments>h3{
+  margin-inline: 16px;
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.users-comment{
+  display: grid;
+  
+  gap: 40px;
 }
