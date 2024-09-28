@@ -34,3 +34,54 @@ a {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }  
+
+.feedback{
+  padding: 32px 16px;
+  
+}
+.customer-feedback{
+  text-align: center;
+}
+
+.lookscout-customer-image{
+  margin-inline: auto;
+}
+
+.customer-feedback h3{
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+}
+
+.customer-feedback p{
+  margin-bottom: 40px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+}
+
+
+
+.customer-comment p{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #272D37;
+  margin-block: 16px;
+}
+
+.customer-comment span{
+  letter-spacing: -0.10000000149011612px;
+  color: #5F6D7E;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.success{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
