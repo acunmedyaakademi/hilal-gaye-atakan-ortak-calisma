@@ -1,27 +1,33 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
 
 * {
   margin: 0;
 }
 
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Inter";
-  color: #272D37;
+  color: #272d37;
 }
 
-
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 ul {
@@ -31,6 +37,222 @@ a {
   text-decoration: none;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
-}  
+}
+
+/* FAQ */
+
+.first-faq,
+.second-faq {
+  padding: 40px 16px;
+}
+
+.faq-support-card details {
+  padding: 16px 32px;
+}
+
+.faq-support-card > details:first-of-type {
+  padding-block: 20px;
+}
+
+.faq-support-card > details:first-of-type > summary {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+details:not(:last-child) {
+  border-bottom: 1px solid #eaebf0;
+}
+
+details p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5f6d7e;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #272d37;
+  list-style: none;
+}
+
+.faq-support-card {
+  border: 1px solid #eaebf0;
+}
+
+.label span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #437ef7;
+  background-color: #f5faff;
+  border-radius: 5px;
+  padding: 4px 12px;
+}
+
+.faq-desktop-info {
+  display: none;
+}
+
+/* Integrations */
+.integrations {
+  padding: 32px 16px;
+}
+
+.integrations-content {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.integrations-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.integrations-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5f6d7e;
+}
+
+.integrations-card-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.integration-card {
+  padding: 16px;
+  border: 1px solid #eaebf0;
+  box-shadow: 0px 1px 2px 0px #1018280a;
+  border-radius: 5px;
+}
+
+.integration-card img {
+  margin-inline: auto;
+}
+
+.int-card-text {
+  text-align: center;
+}
+
+.int-card-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.int-card-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5f6d7e;
+}
+
+@media (width > 375px) {
+  /* FAQ */
+  .first-faq,
+  .second-faq {
+    padding: 40px 32px;
+  }
+
+  .faq-support-card details {
+    padding: 28px 32px;
+  }
+
+  /* Integrations */
+  .integrations {
+    padding: 40px 32px;
+  }
+
+  .integrations-content h3 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .integrations-card-section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 32px;
+  }
+
+  .integration-card {
+    padding: 32px;
+  }
+
+  .integration-card:nth-child(3) {
+    display: none;
+  }
+
+  .int-card-text h4 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (width > 768px) {
+  /* FAQ */
+  .first-faq,
+  .second-faq {
+    padding: 32px 80px;
+  }
+
+  .faq-support-desktop-info > span {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.10000000149011612px;
+    color: #5f6d7e;
+  }
+
+  .faq-desktop-info {
+    display: flex;
+    gap: 32px;
+    color: #5f6d7e;
+  }
+
+  /* Integrations */
+  .integrations {
+    padding: 64px 80px;
+  }
+
+  .integrations-content {
+    margin-bottom: 64px;
+  }
+
+  .integrations-card-section {
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 32px;
+  }
+
+  .integration-card:nth-child(3) {
+    display: block;
+  }
+}
