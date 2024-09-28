@@ -101,7 +101,7 @@ body {
   display: block;
 }
 
-.success p:nth-child(1) {
+.success h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
@@ -109,7 +109,7 @@ body {
   margin-bottom: 16px;
 }
 
-.success p:nth-child(2) {
+.success p {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -128,6 +128,7 @@ body {
 
 .customer-comment {
   border-bottom: 1px solid #EAEBF0;
+  padding-bottom: 16px;
 }
 
 .customer-story {
@@ -141,10 +142,10 @@ body {
 
 .customer-story div {
   padding-inline: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 426px) {
   .feedback {
     margin: 40px 32px;
 
@@ -155,5 +156,89 @@ body {
     line-height: 40px;
     letter-spacing: -0.02em;
     margin-bottom: 16px;
+  }
+
+  .lookscout-customer-image {
+    content: url("../img/customer-2.jpg");
+  }
+
+
+  .customer-story {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+  }
+
+  .customer-story img {
+    grid-column: span 2;
+  }
+
+  .customer-comment {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .success {
+    border-left: 1px solid #EAEBF0;
+  }
+
+  .success h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+
+  .customer-comment p {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+
+  }
+}
+
+@media (min-width: 1172px){
+
+  .feedback{
+    margin: 64px 80px;
+  }
+
+  .customer-story{
+    grid-template-columns: 0.93fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .lookscout-customer-image {
+    content: url("../img/lookscout-customer.png");
+    margin-bottom: 0;
+  }
+
+  .customer-story img {
+    grid-column: 1/2;
+    
+  }
+
+  .customer-comment p{
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
+
+  .success{
+    padding-left: 48px !important;
+  }
+  .success p{
+    margin-bottom: 30px;
+  }
+  
+  .customer-story div{
+    margin-bottom: 56px;
+  }
+
+  .customer-comment{
+    margin-left: 32px;
+    
+  }
+
+  .success a{
+    margin-top: 0;
   }
 }
