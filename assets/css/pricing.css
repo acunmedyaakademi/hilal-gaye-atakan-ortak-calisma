@@ -591,10 +591,13 @@ footer {
     display: flex;
     gap: 140px;
     padding-top: 64px;
+    justify-content: space-between;
     padding-inline: 32px;
+    max-width: 1280px;
   }
 
   .pricing-product-text {
+    max-width: 516px;
     align-self: center;
     padding-top: 0;
     padding-bottom: 0;
