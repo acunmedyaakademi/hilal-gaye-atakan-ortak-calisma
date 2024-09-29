@@ -620,3 +620,90 @@ footer {
     display: none;
   }
 }
+
+
+/* comment Start (hilal) */
+
+.user{
+  display: flex;
+  gap: 10px;
+}
+
+
+.comments{
+  background: #F8F9FB;
+}
+
+.comments>h3{
+  text-align: center;
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.users-comment{
+  display: grid;
+  gap: 40px;
+  margin-inline: 16px;
+}
+
+.user-comment>img{
+  margin-bottom: 16px;
+}
+
+.user-comment>p{
+  margin-bottom: 16px;
+}
+
+
+.user-identify span{
+  color: #5F6D7E;
+
+}
+
+.user-comment:nth-child(3){
+  margin-bottom: 32px;
+}
+
+
+@media (min-width: 375px){
+ 
+  .users-comment{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px;
+} 
+
+  .comments{
+    padding:40px 32px;
+  }
+
+  .user-comment:nth-child(3){
+    grid-row: 2;
+    grid-column: 1/span 2;
+  }
+
+}
+
+
+@media (width > 768px){
+
+  .users-comment{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+  .user-comment:nth-child(3){
+    grid-row: 1;
+    grid-column: 3/4;
+  }
+  .comments{
+    padding: 80px 64px;
+  }
+}
+
+/* comment End (hilal) düzenlemeye çalışıyoz inş gidecek */
+
+
