@@ -109,6 +109,25 @@ header h6 {
   margin-bottom: 32px;
 }
 
+.label-group >div {
+  display: grid;
+  padding: 32px;
+  gap: 16px;
+  
+}
+.label-group label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  margin-bottom: 8px;
+}
+.label-group select {
+  padding: 12px 16px;
+  gap: 12px;
+  border-radius: 5px ;
+  border: 1px solid #DAE0E6 ;
+}
 
 
 
@@ -208,3 +227,142 @@ footer {
 
 }
 /* Mobile End */
+
+/* Tablet start */
+
+@media (width > 375px) {
+  .header-hero {
+    padding-inline: 32px;
+  }
+
+  .hero-info {
+    max-width:672px;
+  }
+
+  .hero-info h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+  }
+
+  /* form */
+  .form > img {
+    height: 546px;
+    width: 768px;
+  }
+  .form-info {
+    text-align: center;
+  }
+  .label-group   {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  /* footer */
+  footer {
+    padding: 40px 32px;
+  }
+  .footer-hero h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.01em;
+    padding-right: 49px;
+  }
+  .input-group {
+    flex-direction: row;
+  }
+  .footer-title {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-copyright .social-icons {
+    gap: 24px ;
+  }
+}
+
+/* Tablet end */
+
+/*  Desktop start */
+
+@media (width > 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+  header {
+    padding: 20px 80px;
+  }
+  .nav li a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #FFF;
+  }
+  .nav li a:hover {
+    color: #437EF7;
+  }
+  header .nav {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin-left: 64px;
+  }
+  .header-register li a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #437EF7;
+    padding: 12px 18px;
+    border-radius: 6px;
+  }
+  .header-register .sign-up {
+    color: #437EF7;
+    background: inherit;
+  }
+  .header-register .login:hover, .header-register .sign-up:hover {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  }
+
+  .header-register {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin-left: auto;
+  }
+  .hero-info {
+    margin-inline:auto ;
+  }
+
+  /* Form */
+
+  .form > img {
+    height: 546px;
+    width: 1440px;
+  }
+  .form-info {
+    padding: 64px 80px;
+    text-align: center;
+  }
+
+  .label-group {
+    padding-inline: 80px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Footer */
+  footer {
+    padding: 64px 80px;
+  }
+  .footer-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-title {
+    display: flex;
+    gap: 152px;
+  }
+}
