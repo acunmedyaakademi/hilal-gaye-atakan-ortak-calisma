@@ -409,6 +409,7 @@ h4 {
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
   }
+
   .card {
     max-width: 384px;
   }
