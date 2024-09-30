@@ -174,6 +174,65 @@ header h6 {
   border: 1px solid #dae0e6;
 }
 
+.staff {
+  padding: 40px 16px;
+}
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-info > div > p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.10000000149011612px;
+}
+
+.main-info > div > span{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5f6d7e;
+}
+.main-info > h6 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.10000000149011612px;
+  color: #437ef7
+}
+
+table tr {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+}
+table span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.10000000149011612px;
+  color: #5f6d7e;
+}
+.two-menu {
+  display: none;
+}
+table th {
+  text-align: left;
+}
+/* table, td, th {
+  border: 1px solid #eaebf0;
+} */
+
+.other-staff {
+  padding: 40px 16px;
+}
+
 .brand-group-button {
   display: inline-flex;
   align-items: center;
@@ -436,6 +495,13 @@ footer {
   .brand-group-img-tablet {
     display: block;
   }
+  table {
+    width: 100%;
+    background-color: #fff;
+  }
+  .two-menu {
+    display: table-cell;
+  }
 
   .feedback {
     margin: 40px 32px;
@@ -663,6 +729,13 @@ footer {
 
   .brand-group-img-tablet {
     display: none;
+  }
+
+  .staff, .other-staff {
+    padding-inline: 112px;
+  }
+  table {
+    background-color: #fff
   }
 
   /* Footer */
