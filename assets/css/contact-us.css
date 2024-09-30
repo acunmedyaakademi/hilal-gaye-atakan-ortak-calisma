@@ -134,6 +134,44 @@ h4 {
 .card-tablet-desktop {
   display: none;
 }
+/* form */
+
+.form-section {
+  margin: 32px 16px;
+  background-color: #f8f9fb;
+}
+.form-group {
+  padding: 20px;
+  max-width: 100%;
+  display: grid;
+  gap: 16px;
+}
+.f-title {
+  margin-bottom: 8px;
+}
+.input-wrap .input {
+  background-color: #fff;
+  border: 1px solid #bebed6;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 15px
+}
+.input-wrap textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #bebed6;
+  border-radius: 6px;
+  padding: 10px 15px
+}
+
+.form-section button {
+  background-color: #437EF7;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+}
 
 /* Features Start */
 
@@ -301,6 +339,21 @@ h4 {
   }
   .card-tablet-desktop {
     display: block;
+  }
+
+  /* form start */
+  .form-section {
+    margin: 48px 32px;
+  }
+  .form-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .message {
+    grid-column: span 2;
+  }
+  .form-section button {
+    max-width: 88px;
+    margin-left: 20px;
   }
 
   /* Features Start */
