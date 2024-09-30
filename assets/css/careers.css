@@ -185,6 +185,19 @@ header h6 {
   margin-bottom: 20px;
 }
 
+tbody tr:first-child th {
+  padding: 16px 16px;
+}
+
+tr td:first-child {
+  padding: 16px 16px;
+}
+
+tr td:nth-child(2),
+tr td:nth-child(3) {
+  padding: 40px 32px;
+}
+
 .main-info > div > p {
   font-size: 18px;
   font-weight: 500;
@@ -192,7 +205,7 @@ header h6 {
   letter-spacing: -0.10000000149011612px;
 }
 
-.main-info > div > span{
+.main-info > div > span {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -204,7 +217,7 @@ header h6 {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.10000000149011612px;
-  color: #437ef7
+  color: #437ef7;
 }
 
 table tr {
@@ -550,6 +563,19 @@ footer {
     letter-spacing: -0.01em;
   }
 
+  tbody tr:first-child th {
+    padding: 20px 32px;
+  }
+
+  tr td:first-child {
+    padding: 16px 32px;
+  }
+
+  tr td:nth-child(2),
+  tr td:nth-child(3) {
+    padding: 28px 32px;
+  }
+
   /* footer */
   footer {
     padding: 40px 32px;
@@ -732,11 +758,12 @@ footer {
     display: none;
   }
 
-  .staff, .other-staff {
+  .staff,
+  .other-staff {
     padding-inline: 112px;
   }
   table {
-    background-color: #fff
+    background-color: #fff;
   }
 
   /* Footer */
