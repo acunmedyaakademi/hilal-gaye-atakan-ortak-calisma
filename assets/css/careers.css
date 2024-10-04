@@ -125,6 +125,10 @@ header h6 {
   color: #f9f9f9;
   margin-bottom: 32px;
 }
+.tablet-phone-none {
+  display: none;
+}
+
 .form > img {
   height: 546px;
   width: 375px;
@@ -219,19 +223,31 @@ tr td:nth-child(3) {
   letter-spacing: -0.10000000149011612px;
   color: #437ef7;
 }
+.wrapper {
+  overflow: auto;
+  border: 1px solid #EAEBF0;
+  border-radius: 5px;
+}
 
-table tr {
+table {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.10000000149011612px;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
 table span {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.10000000149011612px;
   color: #5f6d7e;
+}
+tr {
+  border: 1px solid #EAEBF0;
+  border-radius: 5px;
 }
 .two-menu {
   display: none;
@@ -474,6 +490,9 @@ footer {
     line-height: 60px;
     letter-spacing: -0.01em;
   }
+  .tablet-phone-none {
+    display: none;
+  }
 
   /* form */
   .form > img {
@@ -650,6 +669,16 @@ footer {
   .hero-info {
     margin-inline: auto;
   }
+  .hero-info h1 .desktop-none {
+    display: none;
+  }
+  .tablet-phone-none {
+    display: block;
+  }
+  header h6 {
+    padding-inline: 22px;
+  }
+
 
   /* Form */
 

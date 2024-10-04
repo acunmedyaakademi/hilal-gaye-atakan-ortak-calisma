@@ -36,7 +36,9 @@ a {
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }  
-
+.tablet-phone-none {
+  display: none;
+}
 header {
   background: url(../img/header-desktop.png) no-repeat;
   background-size: cover;
@@ -82,19 +84,26 @@ header h6 {
 .tags {
   padding: 16px;
 }
+.desktop-block {
+  display: none;
+}
 .tags-list p {
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.10000000149011612px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
 }
 .tags-list span {
   background-color: #F7F7F8;
   padding: 4px 12px;
-  margin-right: 11px;
+  border-radius: 5px;
 }
 .tags-input-group {
-  margin-top: 12px;
+  margin-top: 24px;
 }
 
 .tags-input-group form {
@@ -105,6 +114,7 @@ header h6 {
   border: 1px solid #DAE0E6; 
   padding: 10px;
   border-radius: 5px 0px 0px 5px;
+  width: 256px;
 }
 .tags-input-group button {
   background-color: #437EF7;
@@ -112,6 +122,7 @@ header h6 {
   border: none;
   padding: 10px;
   border-radius: 0 5px 5px 0;
+  width: 87px;
 }
 
 /* Blog Start */
@@ -122,7 +133,7 @@ header h6 {
 .blog-card  {
   position: relative;
   border-radius: 10px;
-  border: 1px solid #F5FAFF;
+  border: 1px solid #EAEBF0;
   margin-bottom: 16px;
   width: 343px;
 }
@@ -165,7 +176,12 @@ header h6 {
   color: #5F6D7E;
 }
 
-.card-content h4 ,.card-content p {
+.card-content h4 {
+  margin-bottom: 16px;
+  text-align: left;
+}
+.card-content p {
+  margin-bottom: 24px;
   text-align: left;
 }
 
@@ -292,8 +308,11 @@ footer {
 /* Tablet Start */
 
 @media (width > 375px) {
+  .tablet-phone-none {
+    display: none;
+  }
   .header-hero {
-    padding-inline: 32px;
+    padding-inline: 38px;
   }
 
   .hero-info {
@@ -342,6 +361,9 @@ footer {
     letter-spacing: -0.01em;
     padding-right: 49px;
   }
+  .footer-logo {
+    width: 220px;
+  }
   .input-group {
     flex-direction: row;
   }
@@ -358,6 +380,15 @@ footer {
 /*  Desktop start */
 
 @media (width > 768px) {
+  .desktop-none {
+    display: none;
+  }
+  .desktop-block {
+    display: block;
+  }
+  .tablet-phone-none {
+    display: block;
+  }
   .hamburger-menu {
     display: none;
   }
@@ -409,11 +440,23 @@ footer {
   .tags {
     padding: 32px 80px;
   }
+  .tags-input-group input {
+    width: 382px;
+  }
+  .tags-input-group button {
+    width: 87px;
+  }
   .blog {
     padding: 24px 80px;
   }
+  .blog-card {
+    margin: 0;
+  }
   .blog-card-list {
+    margin-inline: auto;
     grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1110px;
   }
   .tablet-none {
     display: block;
