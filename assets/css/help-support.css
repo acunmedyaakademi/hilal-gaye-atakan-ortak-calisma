@@ -58,11 +58,16 @@ h6 {
   margin-bottom: 24px;
 }
 
+.container {
+  max-width: 343px;
+  margin-inline: auto;
+}
+
 /* FAQ */
 
 .first-faq,
 .second-faq {
-  padding: 40px 16px;
+  padding-block: 40px;
 }
 
 .faq-support-card details {
@@ -122,7 +127,7 @@ summary {
 
 /* Integrations */
 .integrations {
-  padding: 32px 16px;
+  margin-block: 32px;
 }
 
 .integrations-content {
@@ -281,10 +286,14 @@ footer {
 
 @media (width > 375px) {
 
+  .container {
+    max-width: 704px;
+  }
+
   /* FAQ */
   .first-faq,
   .second-faq {
-    padding: 40px 32px;
+    padding-block: 40px;
   }
 
   .faq-support-card details {
@@ -293,7 +302,7 @@ footer {
 
   /* Integrations */
   .integrations {
-    padding: 40px 32px;
+    margin-block: 40px;
   }
 
   .integrations-content h3 {
@@ -344,6 +353,11 @@ footer {
 }
 
 @media (width > 768px) {
+
+  .container {
+    max-width: 1280px;
+  }
+
   .hamburger-menu {
     display: none;
   }
@@ -389,7 +403,7 @@ footer {
   /* FAQ */
   .first-faq,
   .second-faq {
-    padding: 32px 80px;
+    padding-block: 32px;
   }
 
   .faq-support-desktop-info > span {
@@ -409,7 +423,7 @@ footer {
 
   /* Integrations */
   .integrations {
-    padding: 64px 80px;
+    margin-block: 64px;
   }
 
   .integrations-content {

@@ -161,7 +161,9 @@ header {
 /* Section Start */
 
 .section {
-  padding: 32px 18px;
+  max-width: 339px;
+  margin-inline: auto;
+  padding-block: 32px;
 }
 
 .messaging-container-inner {
@@ -216,7 +218,9 @@ header {
 /* Features-Pricing Start */
 
 .features-pricing {
-  padding: 32px 16px;
+  max-width: 343px;
+  margin-inline: auto;
+  padding-block: 32px;
 }
 
 .features-pricing-content {
@@ -434,7 +438,8 @@ footer {
   /* Section Start */
 
   .section {
-    padding: 40px 32px;
+    max-width: 704px;
+    padding-block: 40px;
   }
 
   .messaging-container-inner {
@@ -453,7 +458,8 @@ footer {
   /* Features-Pricing Start */
 
   .features-pricing {
-    padding: 40px 32px;
+    max-width: 704px;
+    padding-block: 40px;
   }
 
   .features-pricing-content h2 {
@@ -557,7 +563,8 @@ footer {
   /* Section Start */
 
   .section {
-    padding: 64px 80px;
+    max-width: 1280px;
+    padding-block: 64px;
   }
 
   .messaging-container-inner {
@@ -584,7 +591,8 @@ footer {
   /* Features-Pricing Start */
 
   .features-pricing {
-    padding: 64px 80px;
+    max-width: 1280px;
+    padding-block: 64px;
   }
 
   .features-pricing-card {

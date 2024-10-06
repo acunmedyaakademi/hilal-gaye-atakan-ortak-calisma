@@ -56,7 +56,9 @@ h6 {
 
 .first-card,
 .second-card {
-  padding: 32px 16px;
+  max-width: 343px;
+  margin-inline: auto;
+  padding-block: 32px;
 }
 
 .brand-group-text {
@@ -509,7 +511,8 @@ footer {
 
   .first-card,
   .second-card {
-    padding: 40px 32px;
+    max-width: 704px;
+    padding-block: 40px;
   }
 
   .brand-group-text h3 {
@@ -742,7 +745,8 @@ footer {
 
   .first-card,
   .second-card {
-    padding: 64px 80px;
+    max-width: 1280px;
+    padding-block: 64px;
   }
 
   .second-card {
