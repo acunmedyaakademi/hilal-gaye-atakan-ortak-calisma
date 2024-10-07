@@ -156,8 +156,7 @@ header {
   width: 100%;
 }
 
-/* Header end */
-
+/* Header End */
 /* Section Start */
 
 .section {
@@ -216,7 +215,6 @@ header {
 }
 
 /* Features-Pricing Start */
-
 .features-pricing {
   max-width: 343px;
   margin-inline: auto;
@@ -298,7 +296,7 @@ header {
   display: none;
 }
 
-/* Footer start */
+/* Footer Start */
 
 footer {
   padding: 32px 16px;
