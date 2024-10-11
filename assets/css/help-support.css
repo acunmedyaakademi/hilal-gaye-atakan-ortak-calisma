@@ -334,6 +334,9 @@ footer {
   footer {
     padding: 40px 32px;
   }
+  .footer-title p {
+    width: 247px;
+  }
   .footer-hero h3 {
     font-size: 32px;
     font-weight: 600;
@@ -392,7 +395,7 @@ footer {
   }
   .header-register .sign-up {
     color: #437EF7;
-    background: #F8F9FB;
+    background: inherit;
   }
   .header-register {
     display: flex;
@@ -428,6 +431,9 @@ footer {
 
   .integrations-content {
     margin-bottom: 64px;
+  }
+  .integrations-content p {
+    padding-inline: 230px;
   }
 
   .integrations-card-section {

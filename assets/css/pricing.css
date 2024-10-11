@@ -57,6 +57,10 @@ header {
 .desktop-menu {
   display: none;
 }
+
+.tablet-phone-none {
+  display: none;
+}
 .header-hero {
   padding: 32px 16px;
 }
@@ -339,6 +343,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
+  column-gap: 58px;
   padding: 32px 16px;
   margin-top: 24px;
 }
@@ -413,10 +418,28 @@ footer {
 
   /* Header End */
 
+  .users-comment{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 32px;
+} 
+
+  .comments{
+    padding:40px 32px;
+  }
+
+  .user-comment:nth-child(3){
+    grid-row: 2;
+    grid-column: 1/span 2;
+  }
+
   /* Footer start */
 
   footer {
     padding: 40px 32px;
+  }
+  .footer-title p {
+    width: 247px;
   }
   .footer-hero h3 {
     font-size: 32px;
@@ -475,6 +498,7 @@ footer {
 
   .pricing-product-text h3 {
     font-size: 32px;
+    padding-right: 39px;
     line-height: 42px;
   }
 
@@ -496,6 +520,12 @@ footer {
 
 @media (width > 768px) {
   .hamburger-menu {
+    display: none;
+  }
+  .tablet-phone-none {
+    display: block;
+  }
+  .desktop-none {
     display: none;
   }
   .desktop-menu {
@@ -559,6 +589,10 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
   /* Header End */
+  .features-pricing-content p {
+    padding-inline: 238px;
+  }
+
 
   /* Section Start */
 
@@ -627,6 +661,17 @@ footer {
   .pricing-product-img-tablet {
     display: none;
   }
+  .users-comment{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+  .user-comment:nth-child(3){
+    grid-row: 1;
+    grid-column: 3/4;
+  }
+  .comments{
+    padding:  64px 80px;
+  }
 }
 
 
@@ -677,41 +722,9 @@ footer {
 }
 
 
-@media (min-width: 375px){
- 
-  .users-comment{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 32px;
-} 
-
-  .comments{
-    padding:40px 32px;
-  }
-
-  .user-comment:nth-child(3){
-    grid-row: 2;
-    grid-column: 1/span 2;
-  }
-
-}
 
 
-@media (width > 768px){
 
-  .users-comment{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-  .user-comment:nth-child(3){
-    grid-row: 1;
-    grid-column: 3/4;
-  }
-  .comments{
-    padding: 80px 64px;
-  }
-}
 
-/* comment End (hilal) düzenlemeye çalışıyoz inş gidecek */
 
 
